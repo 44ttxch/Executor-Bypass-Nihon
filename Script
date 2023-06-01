@@ -1,0 +1,55 @@
+-- script fly beta 
+-- veri ; horror, fps, all
+
+download ; https://cdn.wearedevs.net/scripts/Fly.txt
+exploit ; https://mega.nz/file/9qZU0Lza#bG7JIcanAJH-nn7savuP6FPi7wKek8b3gox-VNqfcHU
+online ; https://whatexploitsare.online/
+
+key ; FUCK THE JOIN DISCORD ME MAN!!!!!!!!!
+https://discord.gg/UXpb8b4hEE
+
+
+
+
+
+
+
+
+
+
+getgenv().Aimbot.Settings.SaveSettings = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-V2/main/Resources/Scripts/Delete%20Settings%20-%20Fix%20Script.lua"))()
+
+-- The locking animation becomes faster as you increase the value (meaning 5 = fastest). The script becomes choppy if you increase the value.
+getgenv().Aimbot.Settings.ThirdPersonSensitivity = 3 -- Boundary: 0.1 - 5
+getgenv().Aimbot.Settings.ThirdPerson = true
+getgenv().Aimbot.Settings.Enabled = false
+getgenv().Aimbot.FOVSettings.Color = "50, 255, 70" -- The colors must be fed as strings in RGB format. [(R)ed (0 - 255); (G)reen (0 - 255); (B)lue (0 - 255)]
+
+-- getgenv().Aimbot.Settings = {
+    SendNotifications = true,
+    SaveSettings = true, -- Re-execute upon changing
+    ReloadOnTeleport = true,
+    Enabled = true,
+    TeamCheck = false,
+    AliveCheck = true,
+    WallCheck = false, -- Laggy
+    Sensitivity = 0, -- Animation length (in seconds) before fully locking onto target
+    ThirdPerson = false, -- Uses mousemoverel instead of CFrame to support locking in third person (could be choppy)
+    ThirdPersonSensitivity = 3, -- Boundary: 0.1 - 5
+    TriggerKey = "MouseButton2",
+    Toggle = false,
+    LockPart = "Head" -- Body part to lock on (Character part's name)
+}
+
+getgenv().Aimbot.FOVSettings = {
+    Enabled = true,
+    Visible = true,
+    Amount = 90,
+    Color = "255, 255, 255",
+    LockedColor = "255, 70, 70",
+    Transparency = 0.5,
+    Sides = 60,
+    Thickness = 1,
+    Filled = false
+}
